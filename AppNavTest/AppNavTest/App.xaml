@@ -6,7 +6,6 @@
 
   <Application.Resources>
    
-    <!--TEST A2-->
 
    
     <OnPlatform x:TypeArguments="ResourceDictionary">
