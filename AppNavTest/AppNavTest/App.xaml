@@ -6,7 +6,7 @@
 
   <Application.Resources>
    
-
+<!--This is a test-->
    
     <OnPlatform x:TypeArguments="ResourceDictionary">
       <OnPlatform.iOS>
