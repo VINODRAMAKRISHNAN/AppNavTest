@@ -29,6 +29,10 @@ namespace AppNavTest.iOS
             FormsVideoPlayer.Init(null);
             LoadApplication(new App());
             //string primary = Microsoft.Intune.MAM.IntuneMAMPolicyManager.Instance.PrimaryUser;
+            #if ENABLE_TEST_CLOUD
+                        // requires Xamarin Test Cloud Agent
+                        Xamarin.Calabash.Start();
+            #endif
             return base.FinishedLaunching(app, options);
         }
     }

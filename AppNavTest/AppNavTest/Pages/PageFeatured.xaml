@@ -36,7 +36,7 @@
         <ColumnDefinition Width="Auto" />
       </Grid.ColumnDefinitions>
 
-      <Image x:Name="idbackbutton" Style="{StaticResource HeaderImageStyle}"  Source="{local:ImageResource AppNavTest.images.left.png}"  Grid.Column="0" Grid.Row="0"  >
+      <Image AutomationId="idbackbutton2" x:Name="idbackbutton" Style="{StaticResource HeaderImageStyle}"  Source="{local:ImageResource AppNavTest.images.left.png}"  Grid.Column="0" Grid.Row="0"  >
         <Image.GestureRecognizers>
           <TapGestureRecognizer
                   Tapped="btnbackbase_clicked"
@@ -46,7 +46,7 @@
 
       <Image  Style="{StaticResource HeaderImageStyle}"  Source="{local:ImageResource AppNavTest.images.logo.png}"  Margin="10, 0, 0, 0" Grid.Column="1" Grid.Row="0" />
       <Label  Style="{StaticResource HeaderLabelStyle}" Grid.Column="2" Grid.Row="0" XAlign="Start"   />
-      <Image x:Name="idmenubutton" Style="{StaticResource HeaderImageStyle}"  Source="{local:ImageResource AppNavTest.images.menu.png}"  Margin="5, 0, 5, 0" Grid.Column="3" Grid.Row="0" >
+      <Image AutomationId="idmenubutton2" x:Name="idmenubutton" Style="{StaticResource HeaderImageStyle}"  Source="{local:ImageResource AppNavTest.images.menu.png}"  Margin="5, 0, 5, 0" Grid.Column="3" Grid.Row="0" >
         <Image.GestureRecognizers>
           <TapGestureRecognizer
                   Tapped="btnmenubase_clicked"
@@ -56,7 +56,7 @@
 
     </Grid>
     
-    <StackLayout    x:Name="layoutsubheading1" Grid.Row="1"  Grid.Column="0"  Style="{StaticResource SubHeaderStackLayoutStyle}"   >
+    <StackLayout AutomationId="layoutsubheading12"   x:Name="layoutsubheading1" Grid.Row="1"  Grid.Column="0"  Style="{StaticResource SubHeaderStackLayoutStyle}"   >
       <Grid RowSpacing="0" ColumnSpacing="0" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" >
         <Grid.RowDefinitions >
           <RowDefinition Height="Auto" />
@@ -79,7 +79,7 @@
 
     <StackLayout Margin="10"  x:Name="layoutbody" Grid.Row="2"  Grid.Column="0"   >
       <!--<StackLayout VerticalOptions="FillAndExpand">-->
-        <ListView SeparatorVisibility="None"  HasUnevenRows="True"  Header=""   ItemsSource="{Binding MVideoList}"  x:Name="featurevideolistviewid" ItemTapped="ListView_ItemTapped" >
+        <ListView AutomationId="featuredlistview2"   SeparatorVisibility="None"  HasUnevenRows="True"  Header=""   ItemsSource="{Binding MVideoList}"  x:Name="featurevideolistviewid" ItemTapped="ListView_ItemTapped" >
           <!--<ListView.HeaderTemplate >
             
             <DataTemplate>
