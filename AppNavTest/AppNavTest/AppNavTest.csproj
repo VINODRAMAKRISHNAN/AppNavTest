@@ -98,8 +98,9 @@
       <HintPath>..\..\packages\Newtonsoft.Json.9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Octane.Xam.VideoPlayer">
-      <HintPath>..\..\packages\Octane.Xam.VideoPlayer.1.2.1.0\lib\MonoAndroid10\Octane.Xam.VideoPlayer.dll</HintPath>
+    <Reference Include="Octane.Xam.VideoPlayer, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>CommonLibs\Octane.Xam.VideoPlayer.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xamarin.Forms.2.3.2.127\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Core.dll</HintPath>
@@ -188,6 +189,15 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CommonLibs\Octane.Xam.VideoPlayer.Android.dll" />
+    <Content Include="CommonLibs\Octane.Xam.VideoPlayer.dll" />
+    <Content Include="CommonLibs\Octane.Xam.VideoPlayer.iOS.dll" />
+    <Content Include="CommonLibs\Octane.Xam.VideoPlayer.UWP.dll" />
+    <Content Include="CommonLibs\Octane.Xam.VideoPlayer.WindowsStore.dll" />
+    <Content Include="CommonLibs\Octane.Xam.VideoPlayer.WP8.dll" />
+    <Content Include="CommonLibs\Octane.Xam.VideoPlayer.WP81.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.3.2.127\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.2.127\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
